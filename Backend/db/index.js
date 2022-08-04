@@ -26,4 +26,5 @@ const trainingData = new Schema({
 const training = mongoose.model('training', trainingData);
 
 
+
 // training.insertOne([{ trainingId: 'E12',  trainerId: '1',  trainingStartDate: new Date(), trainingEndDate: new Date()}], function(err) {});
