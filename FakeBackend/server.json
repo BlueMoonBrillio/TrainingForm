@@ -1,0 +1,60 @@
+{
+  "trainings": [
+    {
+      "id": 1,
+      "trainingId": 1,
+      "trainerId": 1,
+      "traineeId": 1,
+      "trainingStartDate": "9/9/2021",
+      "trainingEndDate": "3/3/2022"
+    },
+    {
+      "id": 2,
+      "trainingId": 2,
+      "trainerId": 1,
+      "traineeId": 2,
+      "trainingStartDate": "9/9/2021",
+      "trainingEndDate": "3/3/2022"
+    },
+    {
+      "id": 3,
+      "trainingId": 3,
+      "trainerId": 1,
+      "traineeId": 3,
+      "trainingStartDate": "9/9/2021",
+      "trainingEndDate": "3/3/2022"
+    },
+    {
+      "id": 4,
+      "trainingId": 4,
+      "trainerId": 1,
+      "traineeId": 4,
+      "trainingStartDate": "9/9/2021",
+      "trainingEndDate": "3/3/2022"
+    },
+    {
+      "id": 5,
+      "trainingId": 5,
+      "trainerId": 1,
+      "traineeId": 5,
+      "trainingStartDate": "9/9/2021",
+      "trainingEndDate": "3/3/2022"
+    },
+    {
+      "id": 6,
+      "trainingId": 6,
+      "trainerId": 1,
+      "traineeId": 6,
+      "trainingStartDate": "9/9/2021",
+      "trainingEndDate": "3/3/2022"
+    },
+    {
+      "id": "sada",
+      "trainingId": "sada",
+      "trainerId": "ssdsd",
+      "traineeId": "sadsads",
+      "trainingStartDate": "2022-08-29",
+      "trainingEndDate": "2022-08-22"
+    }
+  ]
+}

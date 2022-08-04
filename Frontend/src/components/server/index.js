@@ -1,6 +1,6 @@
-const axios = require("axios");
+import axios from "axios";
 
-const baseUrl = "http://localhost:3000/api/trainings";
+const baseUrl = "http://localhost:3006/trainings";
 
 export function getTrainings(id) {
   if (!id) {
@@ -13,7 +13,7 @@ export function deleteTraining(id){
 }
 
 export function createTraining(training){
-  return axios.post(baseUrl, training, {headers: {"content-type": "application/json"}});
+  return axios.post(baseUrl, {id: training.trainingId, ...training}, {headers: {"content-type": "application/json"}});
 }
 
 export function editTraining(id, training){
