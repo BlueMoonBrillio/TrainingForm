@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const validator  = require('validator');
 // TASK Schema: 
 const Training = mongoose.model ('training',{
     _id:{
@@ -23,10 +24,16 @@ const Training = mongoose.model ('training',{
 
     },
     trainingStartDate:{
-        type:String,
+        type:Date,
         required:true,
-        trim:true
+        trim:true,
+    },
+    trainingEndDate:{
+        type:Date,
+        required:true,
+        trim:true,
     }
+
 
 });
 
