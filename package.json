@@ -1,0 +1,24 @@
+{
+  "name": "trainingform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueMoonBrillio/TrainingForm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueMoonBrillio/TrainingForm/issues"
+  },
+  "homepage": "https://github.com/BlueMoonBrillio/TrainingForm#readme",
+  "dependencies": {
+    "mongoose": "^6.5.1",
+    "nodemon": "^2.0.19"
+  }
+}
