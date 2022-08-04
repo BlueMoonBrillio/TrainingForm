@@ -15,13 +15,13 @@ const connection =  mongoose.connect(url,connectionParams)
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
-const trainingData = new Schema({
-  _id: ObjectId,
-  trainingId: String,
-  trainerId: String,
-  trainingStartDate: Date,
-  trainingEndDate: Date
-});
+// const trainingData = new Schema({
+//   _id: ObjectId,
+//   trainingId: String,
+//   trainerId: String,
+//   trainingStartDate: Date,
+//   trainingEndDate: Date
+// });
 
 const training = mongoose.model('training', trainingData);
 

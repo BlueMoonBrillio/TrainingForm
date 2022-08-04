@@ -1,4 +1,5 @@
 var createError = require('http-errors');
+require('dotenv');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -6,7 +7,7 @@ var logger = require('morgan');
 require('./db/server.js');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const Training = require('./db/models/TrainingSchema');
+const Training = require('./models/TrainingSchema');
 
 var app = express();
 
@@ -39,4 +40,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+app.listen(port,()=>{
+  console.log('listening on port '+port);});
