@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "training_name": "nodejs-express",
+    "trainer": "MANAN"
+  },
+  {
+    "id": 2,
+    "training_name": "MERN",
+    "trainer": "VENKY"
+  },
+  {
+    "id": 3,
+    "training_name": "JAVASCRIPT",
+    "trainer": "KIRAN"
+  }
+]
