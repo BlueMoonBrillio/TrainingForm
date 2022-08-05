@@ -18,6 +18,7 @@ const EditTraining = ({trainingData}) => {
     const navigate = useNavigate();
     const editTrainingHandler = (e) => {
         e.preventDefault();
+        console.log(training)
         editTraining(training.id, training).then(res => {alert("Edited training", JSON.stringify(training)); navigate(`/Trainings/${training.id}`)});
     }
     return (

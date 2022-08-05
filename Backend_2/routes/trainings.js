@@ -24,6 +24,18 @@ router.get('/',async (req,res)=>{
     res.send(results)
 })
 
+router.get('/:id',async (req,res)=>{
+    let results={}
+        const id=req.params.id
+        console.log(id)
+        try{
+        results = await Training.find({'trainingId':id})
+        console.log(results)
+        }
+        catch(err){console.log(err);  } 
+    res.send(results)
+})
+
 router.post('/',async (req,res)=>{
     Training.insertMany([{'trainingId': req.body.trainingId, 'trainerId': req.body.trainerId,'traineeId': req.body.traineeId,'trainingStartDate': req.body.trainingStartDate, 'trainingEndDate': req.body.trainingEndDate}])
     .then(function(){
@@ -35,8 +47,8 @@ router.post('/',async (req,res)=>{
     });
 })
 
-router.delete('/',async (req,res)=>{
-    const id =req.query.id;
+router.delete('/:id',async (req,res)=>{
+    const id =req.params.id;
     console.log(id)
     await Training.deleteOne({ trainingId: id })
     .then(function(){
@@ -48,8 +60,8 @@ router.delete('/',async (req,res)=>{
     });
 })
 
-router.put('/',async (req,res)=>{
-    const id =req.query.id;
+router.patch('/:id',async (req,res)=>{
+    const id =req.params.id;
     await Training.updateOne({'trainingId':id},
     {$set:{
         'trainingId': req.body.trainingId , 

@@ -11,7 +11,7 @@ const ViewTraining = (props) => {
   const { id } = useParams();
   useEffect(() => {
     getTrainings(id).then((res) => {
-      setTraining(res.data);
+      setTraining(res.data[0]);
     }).catch(err => console.log(err));
   }, []);
 

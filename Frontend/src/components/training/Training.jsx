@@ -18,8 +18,8 @@ const Training = ({ training, details, editModalHandler }) => {
                 <td>{trainingId}</td>
                 <td>{trainerId}</td>
                 <td>{traineeId}</td>
-                <td>{trainingStartDate}</td>
-                <td>{trainingEndDate}</td>
+                <td>{(trainingStartDate).toString().split("T")[0]}</td>
+                <td>{new Date(trainingEndDate).toDateString()}</td>
                 {!details && <td><button className="btn btn-outline-info" onClick={() => navigate(`/ViewTraining/${training.trainingId}`)}>Details</button></td>}
                 {details && trainingId &&
                     <td>

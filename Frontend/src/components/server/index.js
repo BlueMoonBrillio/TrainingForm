@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3006/trainings";
+const baseUrl = "http://localhost:3001/trainings";
 
 export function getTrainings(id) {
   if (!id) {
