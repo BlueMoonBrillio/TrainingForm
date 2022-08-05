@@ -1,6 +1,5 @@
 // PLEASE FIX this part , donot use boiler plate 
 
-
 const express = require('express');
 const app = express();
 const trainings = require('./routes/trainings');
