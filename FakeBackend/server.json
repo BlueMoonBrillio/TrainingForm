@@ -47,14 +47,6 @@
       "traineeId": 6,
       "trainingStartDate": "9/9/2021",
       "trainingEndDate": "3/3/2022"
-    },
-    {
-      "id": "sada",
-      "trainingId": "sada",
-      "trainerId": "ssdsd",
-      "traineeId": "sadsads",
-      "trainingStartDate": "2022-08-29",
-      "trainingEndDate": "2022-08-22"
     }
   ]
 }

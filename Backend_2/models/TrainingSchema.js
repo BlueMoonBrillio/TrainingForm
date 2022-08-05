@@ -5,17 +5,17 @@ const Joi = require('joi');
 
 const schema = new mongoose.Schema({
     trainingId:{
-        type:Number,
+        type:String,
         required:true,
         trim:true
     },
     trainerId:{
-        type:Number,
+        type:String,
         required:true,
         trim:true
     },
     traineeId:{
-        type:Number,
+        type:String,
         required:true,
         trim:true
 
@@ -33,7 +33,11 @@ const schema = new mongoose.Schema({
         trim:true,
     }
 });
+
 const Training = mongoose.model ('training',schema);
+
+// /Training.insertMany([{'trainingId':"Sd12", 'trainerId': "3",'traineeId': "2",'trainingStartDate': new Date(), 'trainingEndDate': new Date()}])
+    
 
 function validateTraining(training){
     const schema = {

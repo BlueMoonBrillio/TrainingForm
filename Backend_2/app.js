@@ -3,9 +3,10 @@
 const express = require('express');
 const app = express();
 const trainings = require('./routes/trainings');
+const cors=require('cors')
 
 //mongodb database connection
-require('./db/connection');
+require('./db/connection')();
 
 // middlewares 
 app.use(cors());
